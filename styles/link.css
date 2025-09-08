@@ -1,0 +1,22 @@
+.link {
+    text-decoration: none;
+    font-size: inherit;
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+}
+
+.link-arrow {
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.link-arrow svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.link-arrow:hover svg {
+    transform: translateX(4px);
+}
