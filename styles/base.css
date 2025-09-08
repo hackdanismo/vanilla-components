@@ -1,0 +1,10 @@
+.container {
+    /* Set the container to take the full width of the page or parent element */
+    width: 100%;
+    /* Set the maximum width of the container to avoid stretch on large screens */
+    max-width: 1240px;
+    /* Center align the container horizontally */
+    margin: 0 auto;
+    /* Add horizontal padding to provide spacing on smaller screens */
+    padding: 0 1rem;
+}
