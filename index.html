@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/card.css">
     <link rel="stylesheet" href="styles/link.css">
+    <link rel="stylesheet" href="styles/switch.css">
 </head>
 <body>
 <header role="banner">
@@ -19,8 +20,7 @@
 </header>
 <main role="main">
     <section>
-        <div class="container">
-            
+        <div class="container"> 
             <!-- Card -->
             <div class="cards">
                 <div class="card">
@@ -38,7 +38,11 @@
                 </div>
             </div>
             <!-- / Card -->
+        </div>
+    </section>
 
+    <section>
+        <div class="container">
             <!-- Arrow link -->
             <a href="#" class="link link-arrow">
                 Read more
@@ -47,7 +51,17 @@
                 </svg>
             </a>
             <!-- / Arrow link-->
+        </div>
+    </section>
 
+    <section>
+        <div class="container">
+            <!-- Switch -->
+            <label>
+                <input type="checkbox" name="switch" role="switch" class="checkbox--hidden" />
+                <span class="switch"></span>
+            </label>
+            <!-- / Switch -->
         </div>
     </section>
 </main>

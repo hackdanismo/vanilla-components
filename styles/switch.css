@@ -1,0 +1,47 @@
+/* Hide the checkbox but keep it accessible */
+.checkbox--hidden {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.25s;
+}
+
+/* Check state */
+input[type="checkbox"]:checked + .switch {
+    background: #4caf50;
+}
+
+input[type="checkbox"]:checked + .switch::before {
+    transform: translateX(22px);
+}
+
+/* Keyboard focus */
+input[type="checkbox"]:focus-visible + .switch {
+    outline: 3px solid #2196f3;
+    outline-offset: 3px;
+}
