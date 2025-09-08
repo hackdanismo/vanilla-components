@@ -1,0 +1,44 @@
+.btn-scroll-to-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;     /* keep it round */
+    height: 45px;
+    border-radius: 50%;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;  /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.3s;
+}
+
+.btn-scroll-to-top:hover {
+    background-color: #45a049;
+}
+
+/* TODO: move this to be a utility class */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+  
